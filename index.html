@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AKHIL</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+	<section class="banner">
+		<header>
+			<a href="#" class="logo"> COMP NAME</a>
+			<div class="toggle" onclick="toggle()"></div>
+		</header>
+		<div class="content">
+			<div class="contentBx">
+				<h2>Hello<br>World</h2>
+				<p>The Element method querySelectorAll() returns a 
+					static (not live) NodeList representing a list 
+					of elements matching the specified group of 
+					selectors which are descendants of the element on 
+					which the method was called.</p>
+				<a href="#">Join Now</a>
+			</div>
+			<div class="imgBx">
+				<img src="images/pro.png">
+			</div>
+		</div>
+
+		<ul class="soc">
+			<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+		</ul>
+
+		<ul class="menu">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</section>
+	<script type="text/javascript">
+		function toggle(){
+			const toggle = document.querySelector('.toggle');
+			const banner = document.querySelector('.banner');
+			toggle.classList.toggle('active');
+			banner.classList.toggle('active')
+		}
+	</script>
+</body>
+</html>
